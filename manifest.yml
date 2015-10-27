@@ -1,0 +1,20 @@
+---
+# Deployment manifest for use with Pivotal Cloud Foundry
+
+applications:
+- name: rh-board
+  services:
+  - rhboard-redis
+  - rhboard-postgres
+  - rhboard-sendgrid
+  command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
+- name: rh-board-sidekiq
+  memory: 256M
+  instances: 1
+  path: .
+  no-route: true
+  command: bundle exec sidekiq
+  services:
+  - rhboard-redis
+  - rhboard-sendgrid
+  - rhboard-postgres
