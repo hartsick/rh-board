@@ -32,6 +32,8 @@
       vertical-align: text-top;
       margin-top: -3px; //vertical alignment fix
       display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       .extra-info-wrapper & {
         color: $header-primary !important;
@@ -189,13 +191,15 @@
       }
     .badge-wrapper {
       &.bar {
-        margin: 5px 0;
+        padding: 5px 0;
+        width: 100%;
         .badge-category {
           max-width: 100px;
         }
       }
       &.bullet {
-        margin: 5px;
+        padding: 5px;
+        width: 100%;
         .badge-category {
           max-width: 100px;
         }

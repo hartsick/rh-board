@@ -126,6 +126,7 @@ sv:
   num_posts: "Inlägg:"
   num_participants: "Deltagare"
   read_full_topic: "Läs hela ämnet"
+  private_message_abbrev: "Meddelande"
   rss_description:
     latest: "Aktuella ämnen"
     hot: "Heta ämnen"
@@ -243,7 +244,6 @@ sv:
     title: "Välkommen till loungen"
   category:
     topic_prefix: "Om kategorin %{category}"
-    post_template: "%{replace_paragraph}\n\nUse the following paragraphs for a longer description, as well as to establish any category guidelines or rules.\n\nSome things to consider in any discussion replies below:\n\n- What is this category for? Why should people select this category for their topic?\n\n- How is this different than the other categories we already have?\n\n- Do we need this category?\n\n- Should we merge this with another category, or split it into more categories?\n"
     errors:
       uncategorized_parent: "Kategorin \"Okategoriserat\" kan inte ha en föräldrar kategori."
       self_parent: "En underkategori kan inte ha sig själv som förälder."
@@ -268,7 +268,7 @@ sv:
       title: "ledare"
     change_failed_explanation: "Du försökte degradera %{user_name} till '%{new_trust_level}'. Användarens förtroendenivå är redan '%{current_trust_level}'. %{user_name} kommer behålla '%{current_trust_level}'. Om du vill degradera användaren, lås förtroendenivån först"
   rate_limiter:
-    slow_down: "Du har utfört den här handlingen för många gånger, var vänligen och försök igen senare."
+    slow_down: "Du har utfört den här handlingen för många gånger, försök igen senare."
     too_many_requests: "Du gör det där för ofta. Var god vänta %{time_left} innan du försöker igen."
     hours:
       one: "1 timme"

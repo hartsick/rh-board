@@ -180,7 +180,6 @@ td.flaggers td {
   .result-message {
     display: inline-block;
     padding-left: 10px;
-    padding-top: 5px;
   }
   .username {
     input[type=text] {
@@ -214,6 +213,11 @@ td.flaggers td {
     display: inline-block;
     margin-right: 5px;
   }
+}
+
+.paste-users {
+  width: 400px;
+  height: 150px;
 }
 
 .groups, .badges {
@@ -1016,6 +1020,11 @@ table.api-keys {
   }
 }
 
+.groups-bulk {
+  .control {
+    margin-bottom: 1em;
+  }
+}
 
 .commits-widget {
   border: solid 1px dark-light-diff($primary, $secondary, 90%, -60%);
@@ -1164,10 +1173,6 @@ table.api-keys {
 
   .controls {
     margin-top: 10px;
-  }
-
-  .pagedown-editor {
-    width: 98%;
   }
 
   textarea.plain {
@@ -1479,9 +1484,6 @@ and (max-width : 500px) {
 
   .content-editor {
     width: 100%;
-      .pagedown-editor {
-        box-sizing: border-box;
-      }
   }
 
   div.ac-wrap {
